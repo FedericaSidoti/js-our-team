@@ -34,7 +34,7 @@ const team = [
 
 //console.log(team)
 //Stampare per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
-const cardDomElement = document.querySelector('.card');
+const rowDomElement = document.querySelector('.row');
 
 for(let i = 0; i < team.length; i++) {
     const currentMember = team[i] 
@@ -44,14 +44,18 @@ for(let i = 0; i < team.length; i++) {
 
     const currentIMG = currentMember.foto;
     const htmlString = `
-    <div class="img">
-        <img src="${currentIMG}">
+    <div class="col-4">
+        <div class="card">
+            <div class="img-wrapper">
+                <img class="img" src="${currentIMG}">
+            </div>
+            <p class="text">${currentMember.nome}</p>
+            <p class="text">${currentMember.ruolo}</p>
+        <div class="card">
     </div>
-    <div class="text">${currentMember.nome}</div>
-    <div class="text">${currentMember.ruolo}</div>
     `
 
-    cardDomElement.innerHTML += htmlString
+    rowDomElement.innerHTML += htmlString
 }
 
 // - PER OGNI immagine, creare un div che la contenga e inserirlo nell'html

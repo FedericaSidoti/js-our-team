@@ -1,0 +1,80 @@
+/*****REGOLE DI RESET****/
+
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Body*/
+body {
+/*    background-color: ;*/
+    padding: 50px; 
+    background-image: linear-gradient( #82398A, #4A2050);
+}
+
+/*HEADER*/
+
+.header {
+    min-height: 50px;
+    background-color: #FD9C4F;
+    text-align: center;
+    padding: 20px; 
+    color: #4A2050; 
+    max-width: 1200px;
+    margin: 0 auto 20px auto; 
+}
+
+.page-title {
+    font-size: 50px; 
+    margin-bottom: 10px;
+    color: #EE5E43; 
+    font-weight: bold;
+}
+
+.header-text {
+    font-size: 25px; 
+    font-weight: bold;
+}
+
+/*MAIN*/
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px; 
+}
+
+.col-4 {
+    flex-basis: calc((100% / 12) * 4);
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    text-align: center;
+}
+
+.card {
+    padding: 20px; 
+    background-color: #FD9C4F;
+    border-radius: 500px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: #4A2050; 
+    font-weight: bold;
+}
+
+.img {
+    border-radius: 50%; 
+    margin-bottom: 20px;
+}
